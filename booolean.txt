@@ -1,0 +1,27 @@
+package task01;
+import java.util.Scanner;
+public class Main {
+	public static boolean isPalindrome(String str) {
+		
+		boolean isPal= true;
+		int i=0;
+		int j=str.length()-1;
+		while(i<=j) {
+			if(str.charAt(i) !=str.charAt(j)) {
+			isPal=false;
+			break;
+		}
+		i++;
+		j--;
+		}
+		return isPal;
+}
+	public static void main(String[] args) {
+String str="LEVEL";
+System.out.println(isPalindrome(str));
+	}
+}	
+		
+		
+		
+		
