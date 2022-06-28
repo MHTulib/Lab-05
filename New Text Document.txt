@@ -1,0 +1,50 @@
+package task01;
+import java.util.Scanner;
+public class Main {
+
+public static boolean isPalindrome(String str) {
+		
+		boolean isPal= true;
+		int i=0;
+		int j=str.length()-1;
+		while(i<=j) {
+			if(str.charAt(i) !=str.charAt(j)) {
+			isPal=false;
+			break;
+		}
+		i++;
+		j--;
+		}
+		return isPal;
+}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+String str=sc.nextLine();
+System.out.println(isPalindrome(str));
+	}}
+___________________________________________________________________________________________________________________________
+
+package task02;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		double x;
+		x=mult();
+		System.out.println("Result"+x);
+	}
+	
+		public static double mult() {
+			int a,b;
+			Scanner sc= new Scanner(System.in);
+			System.out.println("input a number");
+			a=sc.nextInt();
+			System.out.println("input a number");
+			b=sc.nextInt();
+			double x=a*b;
+			return x;
+		}
+	
+	
+
+}
